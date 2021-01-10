@@ -1,0 +1,96 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="fontawesome/all.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  </head>
+  <body>
+    <h1>HICKIES Orginals</h1>
+
+    <div class="stars">
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+
+      <h4 class="reviews">1.293 reviews</h4>
+    </div>
+
+    <div class="price">
+      <h2 class="discount-price price-color">$14.99</h2>
+      <h4 class="original-price">$17.99</h4>
+      <h4 class="discount">25% Off</h4>
+    </div>
+
+    <h3>Online Exclusive</h3>
+
+    <div class="colors">
+      <h3>Color: <span class="color-name">Eletric Red </span></h3>
+      <div data-mode="red" class="color-dot" id="color-red"></div>
+      <div data-mode="purple" class="color-dot" id="color-purple"></div>
+      <div data-mode="black" class="color-dot" id="color-black"></div>
+      <div data-mode="orange" class="color-dot" id="color-orange"></div>
+      <div data-mode="blue" class="color-dot" id="color-blue"></div>
+      <div data-mode="green" class="color-dot" id="color-green"></div>
+    </div>
+
+    <div class="cart-info">
+      <h4>Size Guide</h4>
+      <h4>Your Custom Fit</h4>
+
+      <div class="add-to-cart">
+        <input type="text " value="0" class="unit" id="quantity" />
+        <button class="cart-button" id="modalBtn">Add to cart</button>
+      </div>
+    </div>
+
+    <div class="divider">
+      <h3>Details</h3>
+      <div class="no-of-items"></div>
+    </div>
+
+<br>
+    <div class="HELP">
+      <h4 class="NeedHelp">Need Help</h4>
+      <h4 class="Shipping">Shipping and returns</h4>
+
+    </div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+    <div class="modal" id="myModal">
+      <div class="modal-content">
+        <h3>Please add the quantity of the item you have selected</h3>
+        <div class="quantity-info">
+          <h4 class="color-name-modal">Eletric Red</h4>
+          <button id="minusOn" class="fa fa-minus"></button>
+          <input type="text" value="0" id="text" class="unit" />
+          <button id="addOn" class="fa fa-plus"></button>
+        </div>
+
+        <div class="agree-cancel">
+          <button id="agreeBtn">Agree</button>
+          <button id="cancelBtn">Cancel</button>
+        </div>
+      </div>
+    </div>
+    <script src="javascript/script.js"></script>
+  </body>
+</html>

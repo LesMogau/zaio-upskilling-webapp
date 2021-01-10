@@ -1,0 +1,87 @@
+
+HTML PART
+
+<!-- Trigger/Open The Modal -->
+<button id="myHelpBtn class="myHelpBtn">Need Help?</button>
+
+<!-- The Modal -->
+<div id="myHelpModal" class="myHelpModal">
+
+  <!-- Modal content -->
+  <div class="myHelpModal-content">
+    <span class="close">&times;</span>
+    <p><h3>What are my delivery options and how much does it cost?</h3>
+      Standard delivery is FREE for orders totalling $10 or more.<br>
+      You can view all our delivery options here to find out how much it costs and how long each option takes.<br>
+
+      <h3>How do I cancel an order?</h3>
+      If you've received your order confirmation but not yet paid for your order<br> 
+      (e.g. if you've selected to pay by regular EFT or Cash On Delivery),<br> then you can request a cancellation here. If you have paid already, your order can't be cancelled and your items can only be returned to us after they've been delivered.<br>
+      You can do this by following our returns process,<br> as long as your order falls within our Returns Policy.
+      
+      <h3>How can I pay for my order?</h3>
+        We have lots of safe and easy ways to pay,
+        which you can view here.<br> Some options are only available for certain orders and all available payment 
+        methods will be presented to you at checkout.
+    
+    </p>
+  </div>
+
+</div>
+
+
+JAVASCRIPT CLASS
+
+/*help modal? */
+// Get the modal
+var myHelpModal = document.getElementById("myHelpModal");
+
+// Get the button that opens the modal
+var myHelpbtn = document.getElementById("myHelpBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+  myHelpModal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  myHelpModal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == myHelpModal) {
+    myHelpModal.style.display = "none";
+  }
+}
+
+
+CSS PART
+
+/*help modal styling*/
+/* The Modal (background) */
+.myHelpModal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.myHelpModal-content{
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
